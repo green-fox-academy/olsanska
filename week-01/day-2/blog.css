@@ -1,0 +1,39 @@
+html {
+    background: #fff;
+}
+
+head {
+    background-color: gray;
+    
+}
+
+body {
+    margin: 0;
+    
+}
+
+main {
+    text-align: left;
+    padding-left: 10%;
+    padding-right: 10%;
+
+    
+}
+
+
+h1{
+    text-align: center;
+    margin: 0;
+    border-style: solid;
+    border-width: thin;
+    color: black;
+    background-color: gray;
+}
+
+p {
+    padding: 1%;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+
+}
