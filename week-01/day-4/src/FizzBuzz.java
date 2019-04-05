@@ -15,10 +15,23 @@ public class FizzBuzz {
                 System.out.println("Buzz");
             } else {
                 System.out.println(b);
-                }
             }
         }
+        for (int b = a; b <= 100; b++) {
+            String output = "";
+            if (b % 3 == 0) {
+                output = "Fizz";
+            }
+            if (b % 5 == 0) {
+                output += "Buzz";
+            }
+            if (output.length() == 0) {
+                output = "" + b;
+            }
+            System.out.println(output);
+        }
     }
+}
 
 
 
