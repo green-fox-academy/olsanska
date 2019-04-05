@@ -7,11 +7,12 @@ public class OddEven {
         System.out.println("Write some number, please");
         int p = scanner.nextInt();
 
-        if(p % 2 == 0) {
-            System.out.println("This number is odd");
-        } else {
+        if (p % 2 == 0) {
+
             System.out.println("This number is even");
-        }
+        } else {
+            System.out.println("This number is odd");
         }
     }
+}
 
