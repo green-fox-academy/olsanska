@@ -21,8 +21,8 @@ public class MultiplicationTable {
         System.out.println("Write a number: ");
         int a = scanner.nextInt();
         for (int i = 1; i < 11; i++) {
-            for (int b = i * a; i < 11; i++)
-            System.out.println(i + " * " + a + " = " + b);
+            //for (int b = i * a; i < 11; i++)
+            System.out.println(i + " * " + a + " = " + i * a);
         }
 
 
