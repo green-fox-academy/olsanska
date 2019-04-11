@@ -1,12 +1,18 @@
+import java.util.Arrays;
+
 public class Reverse {
     public static void main(String[] args){
 
         int[] aj = {3, 4, 5, 6, 7};
-        for (int i = aj[4]; i >= aj[0]; i++) {
-            System.out.println(aj[i]);
+
+        for (int i = 0; i <= aj.length / 2; i++) { //length = 0 1 2 3 4
+            int temp = aj[i];
+            aj[i] = aj[aj.length - i - 1];
+            aj[aj.length - i - 1] = temp;
+
+
         }
-
-
+        System.out.println(Arrays.toString(aj));
     }
 }
 
