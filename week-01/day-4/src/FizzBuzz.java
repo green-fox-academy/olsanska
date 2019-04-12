@@ -17,6 +17,8 @@ public class FizzBuzz {
                 System.out.println(b);
             }
         }
+
+        /*
         for (int b = a; b <= 100; b++) {
             String output = "";
             if (b % 3 == 0) {
@@ -29,7 +31,7 @@ public class FizzBuzz {
                 output = "" + b;
             }
             System.out.println(output);
-        }
+        }*/
     }
 }
 
