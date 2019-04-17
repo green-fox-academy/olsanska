@@ -6,6 +6,7 @@ public class Thing {
     private boolean completed;
 
     public Thing(String name) {
+
         this.name = name;
     }
 
