@@ -12,6 +12,5 @@ public class Main {
         System.out.println(pen.color + "\n" + pen.width + "\n" + pen.inkAmount);
 
 
-
     }
 }
