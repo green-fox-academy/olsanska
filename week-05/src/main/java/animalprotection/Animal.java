@@ -2,10 +2,10 @@ package animalprotection;
 
 public class Animal {
 
-    String name;
-    String ownerName;
-    boolean isHealthy;
-    int healCost;
+    private String name;
+    private String ownerName;
+    private boolean isHealthy;
+    private int healCost;
 
     public Animal(String name, String ownerName, boolean isHealthy, int healCost) {
         this.name = name;
@@ -13,6 +13,14 @@ public class Animal {
         this.isHealthy = isHealthy;
         this.healCost = healCost;
 
+    }
+
+    public boolean isHealthy() {
+        return isHealthy;
+    }
+
+    public int getHealCost() {
+        return healCost;
     }
 
     public void heal() {

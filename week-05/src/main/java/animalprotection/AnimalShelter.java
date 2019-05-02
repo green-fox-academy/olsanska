@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AnimalShelter {
-    int budget = 50;
-    List<Animal> animalList = new ArrayList<>();
-    List<String> adpotersName = new ArrayList<>();
+    private int budget = 50;
+    private List<Animal> animalList = new ArrayList<>();
+    private List<String> adoptersName = new ArrayList<>();
 
     public int rescue(Animal animal) {
         animalList.add(animal);
@@ -15,7 +15,7 @@ public class AnimalShelter {
 
     public int heal() {
         for (Animal anim : animalList) {
-            if (budget > anim.healCost && !anim.isHealthy) {
+            if (budget > anim.getHealCost() && !anim.isHealthy()) {
                 anim.heal();
                 return 1;
             }
@@ -24,12 +24,12 @@ public class AnimalShelter {
     }
 
     public void addAdopter(String name) {
-        adpotersName.add(name);
+        adoptersName.add(name);
     }
 
     public void findNewOwner() {
         animalList.remove(animalList.get((int)(Math.random() * animalList.size())));
-        adpotersName.remove(adpotersName.get((int)(Math.random() * adpotersName.size())));
+        adoptersName.remove(adoptersName.get((int)(Math.random() * adoptersName.size())));
 
     }
 
@@ -40,7 +40,7 @@ public class AnimalShelter {
 
     @Override
     public String toString() {
-        String animalShelterInfo = "Budget: " + budget + "€, There are " + animalList.size() + " animal(s) and " + adpotersName.size() + " potential adopter(s)";
+        String animalShelterInfo = "Budget: " + budget + "€, There are " + animalList.size() + " animal(s) and " + adoptersName.size() + " potential adopter(s)";
         for (Animal animal : animalList) {
             animalShelterInfo += "\n" + animal.toString();
         }
