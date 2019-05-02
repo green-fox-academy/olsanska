@@ -1,4 +1,4 @@
-package ToDoApp;
+package toDoApp;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -10,8 +10,6 @@ import java.util.List;
 public class TaskManager {
     List<String> content = new ArrayList<>();
     Path filePath = Paths.get("ToDoAppFile.txt");
-
-
 
 
     public void listTask(String filename) {
@@ -52,31 +50,17 @@ public class TaskManager {
         return "Unable to remove the task number " + (numberOfTask - 1);
     }
 
-        //System.out.println("apples".substring(3)); -> les
-        public String completeTask(int numberOfCompletedTask) {
-            try {
-                content = Files.readAllLines(filePath);
-                content.set(numberOfCompletedTask, " [x" + content.get(numberOfCompletedTask).substring(3));
-                Files.write(filePath, content);
-                return "Task " + (numberOfCompletedTask - 1) + " completed";
-            } catch (Exception e) {
-                System.out.println("Unable to do changes in the file");
-            }
-            return "Nope";
+    //System.out.println("apples".substring(3)); -> les
+    public String completeTask(int numberOfCompletedTask) {
+        try {
+            content = Files.readAllLines(filePath);
+            content.set(numberOfCompletedTask, " [x" + content.get(numberOfCompletedTask).substring(3));
+            Files.write(filePath, content);
+            return "Task " + (numberOfCompletedTask - 1) + " completed";
+        } catch (Exception e) {
+            System.out.println("Unable to do changes in the file");
         }
-
+        return "Nope";
     }
 
-
-
-/*
-
-Command Line Todo application
-=============================
-
-Command line arguments:
- -l   Lists all the tasks
- -a   Adds a new task
- -r   Removes a task
- -c   Completes a task
- */
+}
