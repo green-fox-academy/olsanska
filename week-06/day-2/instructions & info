@@ -14,3 +14,13 @@ public static void main(String[] args) {
   // solving it with magic
   myList.stream().filter(x -> x > 3).forEach(System.out::println);
 }
+
+AVERAGE
+numbers.stream()
+        .filter(n -> n >= 20)
+        .mapToInt(n -> n)
+        .average()
+        .ifPresent(value -> sout(value + " is the average"));
+
+        double d = numbers.stream()
+                            .collect(Collectors.averagingInt(Integer::intValue));
