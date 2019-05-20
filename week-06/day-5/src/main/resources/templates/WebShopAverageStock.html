@@ -1,0 +1,32 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link href=“https://fonts.googleapis.com/css?family=Raleway&display=swap” rel=“stylesheet” />
+    <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+<h1>My Shop</h1>
+<form action="/search" method="post">
+    <input type="text" placeholder="Search..." name="search">
+    <button type="submit">Submit</button>
+</form>
+<nav>
+    <a href="/only-available">
+        ONLY AVAILABLE
+    </a>
+    <a href="/cheapest-first">
+        CHEAPEST FIRST
+    </a>
+    <a href="/contains-nike">
+        CONTAINS NIKE
+    </a>
+    <a href="/average-stock">
+        AVERAGE STOCK
+    </a>
+    <a href="/most-expensive">
+        MOST EXPENSIVE AVAILABLE
+    </a>
+</nav>
+<h2 th:text="${Average}">
+</h2>
+</body>
+</html>
