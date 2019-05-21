@@ -1,0 +1,38 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link href=“https://fonts.googleapis.com/css?family=Raleway&display=swap” rel=“stylesheet” />
+    <link rel="stylesheet" href="/style2.css" />
+</head>
+<body>
+<div class="wrapper">
+    <a class="home" href="/home"><h1>Bank of Simba</h1></a>
+    <h2>Coolest bank accounts ever</h2>
+    <nav>
+        <a href="/accounts">
+            ACCOUNTS
+        </a>
+        <a href="/newaccount">
+            CREATE NEW ACCOUNT
+        </a>
+    </nav>
+<div class="overlay" xmlns:th="http://www.w3.org/1999/xhtml">
+    <form action="/handle-the-form" method="post" th:object="${newAccount}">
+        <div class="con">
+            <header class="head-form">
+                <h2>Create new account</h2>
+            </header>
+            <br>
+            <div class="field-set">
+                <h2>Name: </h2>
+                <input type="text" th:field="*{name}"><br>
+                <h2>Password: </h2>
+                <input type="text" th:field="*{password}">
+                <br>
+                <button class="log-in"> Create new account </button>
+            </div>
+        </div>
+    </form>
+</div>
+</div>
+</body>
+</html>

@@ -7,7 +7,8 @@ h1 {
     font-family: ‘Raleway’, sans-serif;
 }
 h2 {
-
+    color: #242e8b;
+    font-family: ‘Raleway’, sans-serif;
 }
 table {
     border: 1px solid #ccc;
@@ -34,4 +35,29 @@ table th {
 }
 .wrapper {
     margin: 100px;
+}
+a {
+    background: #ff631e;
+    color: black;
+    font-family: ‘Raleway’, sans-serif;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 5px;
+    text-decoration: none;
+}
+a:hover {
+    background: #b61800;
+}
+.home {
+    background: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+.form {
+    background: #ff631e;
+    margin: 50px;
+    border: 1px solid #dd8168;
+    padding: 10px;
+
+
 }
