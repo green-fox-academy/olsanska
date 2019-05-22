@@ -28,6 +28,12 @@ public class Student extends Person {
     public void skippedDays(int days) {
         this.skippedDays = days;
     }
+
+    @Override
+    protected Student clone() {
+        return new Student(name, age, gender, previousOrganization);
+    }
 }
+
 
 

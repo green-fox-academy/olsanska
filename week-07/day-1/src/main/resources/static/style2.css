@@ -22,9 +22,16 @@ body {
     opacity: .95;
     /* background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%); */
 }
+
+.wrapper {
+    padding: 0 0 0 60px;
+}
+nav {
+    padding: 40px 0px 40px 0px;
+}
 a {
     margin: 50px;
-    padding: 20px 20px 20px 20px;
+    padding: 20px;
     text-decoration: none;
 }
 
@@ -39,9 +46,39 @@ a {
 /* End body rules */
 
 /* Start form  attributes */
+tbody {
+    padding: 0px;
+    margin: 0px;
+}
+table tr, td {
+    padding: 10px 10px 10px 10px;
+    margin: 0px;
+}
+table th {
+    border-color: #FFE6FA;
+    background-color: #FFE6FA;
+}
+thead {
+    font-size: 100%;
+    font-family: 'Playfair Display', serif;
+    color: #3e403f;
+    text-align: left;
+    text-decoration: none;
+    background-color: #FFE6FA;
+}
+table {
+    width: 450px;
+    min-height: inherit;
+    height: auto;
+    border-radius: 5px;
+    margin: 2% auto;
+    box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+    padding: 2%;
+    background-color: #E3FDF5;
+}
 form {
     width: 450px;
-    min-height: 500px;
+    min-height: 400px;
     height: auto;
     border-radius: 5px;
     margin: 2% auto;
@@ -171,10 +208,6 @@ button {
     margin-left: 2%;
 }
 
-/*       Forgot Password button FAF3DD  */
-.frgt-pass {background: transparent;}
-
-/*     Sign Up button  */
 .sign-up {background: #B8F2E6;}
 
 

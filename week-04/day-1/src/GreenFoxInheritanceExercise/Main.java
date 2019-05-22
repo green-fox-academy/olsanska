@@ -10,8 +10,6 @@ public class Main {
         people.add(mark);
         Person jane = new Person();
         people.add(jane);
-        Student john = new Student("John Doe", 20, "male", "BME");
-        people.add(john);
         Student student = new Student();
         people.add(student);
         Mentor gandhi = new Mentor("Gandhi", 148, "male", "senior");
@@ -40,7 +38,6 @@ public class Main {
 
         Cohort awesome = new Cohort("AWESOME");
         awesome.addStudent(student);
-        awesome.addStudent(john);
         awesome.addMentor(mentor);
         awesome.addMentor(gandhi);
         awesome.info();
@@ -48,6 +45,13 @@ public class Main {
         for (Person person : people) {
             System.out.println(person.introduce());
         }
+
+        System.out.println("----------------------------------------");
+
+        Student john = new Student("John", 20, "male", "BME");
+        System.out.println(john.introduce());
+        Student johnTheClone = john.clone();
+        System.out.println(johnTheClone.introduce());
 
 
     }

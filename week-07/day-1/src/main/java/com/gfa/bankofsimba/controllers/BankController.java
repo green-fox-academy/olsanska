@@ -24,13 +24,13 @@ public class BankController {
     @RequestMapping("/home")
     public String show(Model model) {
         model.addAttribute("BankAccount", accounts);
-        return "BankOfSimba";
+        return "BankOfSimba2";
     }
 
     @RequestMapping("/accounts")
     public String accounts(Model model) {
         model.addAttribute("BankAccount", accounts);
-        return "Accounts";
+        return "Accounts2";
     }
 
     @GetMapping("/newaccount")

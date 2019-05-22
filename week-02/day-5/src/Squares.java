@@ -19,6 +19,7 @@ public class Squares {
         g.drawRect(x + size /3, y, size / 3, size / 3);
         g.drawRect(x + (size / 3) * 2, y + size / 3, size / 3, size / 3);
         g.drawRect(x + size / 3, y + (size / 3) * 2, size / 3, size / 3);
+
         square(x, y + size / 3, size / 3, g);
         square(x + size /3, y, size / 3, g);
         square(x + (size / 3) * 2, y + (size/3), size / 3, g);

@@ -1,0 +1,44 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link href=“https://fonts.googleapis.com/css?family=Raleway&display=swap” rel=“stylesheet” />
+    <link rel="stylesheet" href="/style2.css" />
+</head>
+<body>
+<div class="wrapper">
+    <a class="home" href="/home"><h1>Bank of Simba</h1></a>
+    <h2>Coolest bank accounts ever</h2>
+    <nav>
+        <a href="/accounts">
+            ACCOUNTS
+        </a>
+        <a href="/newaccount">
+            CREATE NEW ACCOUNT
+        </a>
+    </nav>
+</div>
+<table>
+    <thead>
+    <th>
+        NAME
+    </th>
+    <th>
+        BALANCE
+    </th>
+    <th>
+        TYPE
+    </th>
+    <th>
+        No.
+    </th>
+    </thead>
+    <tbody>
+    <tr th:each="accounts : ${BankAccount}">
+        <td th:text="${accounts.getName()}"></td>
+        <td th:text="${accounts.getBalance()}"></td>
+        <td th:text="${accounts.getAnimalType()}"></td>
+        <td th:text="${accountsStat.index}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

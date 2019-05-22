@@ -2,6 +2,7 @@ package bettingSystem;
 
 public class Main {
     public static void main(String[] args) {
+
         Contestant first = new Contestant("first");
         Contestant s = new Contestant("s");
         Contestant t = new Contestant("t");

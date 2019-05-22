@@ -26,6 +26,7 @@ public class SwearWords {
             System.out.println("fuck it");
             return 0;
         }
+
         for (String line : lines) {
             words = line.split(" ");
             for (String word : words) {
