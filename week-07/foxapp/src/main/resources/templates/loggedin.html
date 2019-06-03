@@ -1,0 +1,11 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link href=“https://fonts.googleapis.com/css?family=Raleway&display=swap” rel=“stylesheet” />
+    <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+<h1 th:text="'Welcome '+ ${fox.getName()}"></h1>
+<img src="cuteFox1.png" alt="cuteFox" width="250" height="260">
+<p th:text="'This is ' + ${fox.getName()}"></p>
+</body>
+</html>
