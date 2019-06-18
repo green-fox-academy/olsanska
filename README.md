@@ -1,4 +1,5 @@
 # H1 "Links"
-<p> git-lesson-repository (https://github.com/olsanska/git-lesson-repository)<p>
-<p> repo for workshop exercises (https://github.com/green-fox-academy/olsanska)<p>
+<p> git-lesson-repository (https://github.com/olsanska/git-lesson-repository)</p>
+<p> repo for workshop exercises (https://github.com/green-fox-academy/olsanska)</p>
+<p> (https://github.com/olsanska/p2p-chat)</p>
 
